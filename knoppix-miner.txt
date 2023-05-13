@@ -1,0 +1,205 @@
+    pkg update && pkg upgrade
+
+    pkg update && pkg upgrade && install git && pkg install wget && pkg install nano && pkg install proot && pkg install cmake && pkg install make curl openssl-tool -y
+
+pkg update -y; pkg install git wget curl nano -y
+
+apt upgrade -y; apt install git nano curl wget build-essential openssl-tool proot -y
+
+pkg install git nano curl wget openssl-tool proot -y
+
+     hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Debian/debian.sh && bash debian.sh
+
+    mv start-debian.sh go
+
+========
+miner
+
+sudo apt update -y 
+
+sudo apt upgrade -y
+
+sudo apt-get install wget -y && apt-get install proot -y && apt-get install git -y && apt-get install nano -y
+
+sudo apt-get install build-essential cmake automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev zlib1g-dev make libuv1-dev libmicrohttpd-dev libssl-dev g++ -y
+
+sudo apt-get install libc6-dev m4 libtool libncurses-dev unzip git python2 zlib1g-dev wget libcurl4-gnutls-dev bsdmainutils automake curl -y
+
+==========
+cpuminer-opt 
+
+git clone https://github.com/JayDDee/cpuminer-opt.git
+
+git clone https://github.com/glukolog/cpuminer-opt.git
+
+---------
+optn2 sh
+---------
+ #!/bin/sh
+clear
+export TZ=Asia/Jakarta
+cd cpuminer-opt
+./cpuminer --algo scrypt --param-n 1048576 -o stratum+tcp://scryptn2.mine.zergpool.com:3435 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,ID=lenz -t 2
+
+--------------
+
+ #!/bin/sh
+clear
+export TZ=Asia/Jakarta
+cd cpuminer-opt
+./cpuminer -a yescrypt -o stratum+tcp://yescrypt.mine.zergpool.com:6233 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,mc=BSTY/XMY,ID=lenz -t 2
+
+------
+
+ #!/bin/sh
+clear
+export TZ=Asia/Jakarta
+cd cpuminer-opt
+./cpuminer -a yescryptr16 -o stratum+tcp://yescryptR16.mine.zergpool.com:6333 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,ID=lenz -t 2
+
+
+ #!/bin/sh
+clear
+export TZ=Asia/Jakarta
+cd cpuminer-opt
+./cpuminer -a yescryptr32 -o stratum+tcp://yescryptR32.mine.zergpool.com:6343 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,ID=lenz -t 2
+
+ #!/bin/sh
+clear
+export TZ=Asia/Jakarta
+cd cpuminer-opt
+./cpuminer -a yespower -o stratum+tcp://yespower.mine.zergpool.com:6533 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,ID=lenz -t 2
+
+
+cpupower
+
+ #!/bin/sh
+clear
+export TZ=Asia/Jakarta
+cd cpuminer-opt
+./cpuminer -a yespower --param-key "CPUpower: The number of CPU working or available for proof-of-work mining" -o stratum+tcp://cpupower.mine.zergpool.com:4250 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,ID=lenz -t 2
+
+power2b
+
+ #!/bin/sh
+clear
+export TZ=Asia/Jakarta
+cd cpuminer-opt
+./cpuminer --algo yespower-b2b --param-n 2048 --param-r 32 --param-key "Now I am become Death, the destroyer of worlds" -o stratum+tcp://power2b.mine.zergpool.com:7445 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,ID=lenz -t 2
+
+===========
+
+ccminer verus
+
+git clone --single-branch -b ARM https://github.com/wong-fi-hung/cc-miner
+
+git clone --single-branch -b Linux-x86_64 https://github.com/wong-fi-hung/cc-miner
+
+alternatives
+
+git clone --single-branch -b ARM https://github.com/monkins1010/ccminer
+
+--------
+verus sh
+--------
+
+for PC
+
+https://github.com/hellcatz/hminer/releases
+
+--------
+for android
+
+#!/bin/sh
+clear
+cd ccminer
+./ccminer -a verus -o stratum+tcp://verushash.mine.zergpool.com:3300 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,ID=fonz -t 2
+
+===========
+
+minotaurx algo
+
+git clone https://github.com/litecoincash-project/cpuminer-multi
+
+----
+mino sh
+----
+
+#!/bin/sh
+clear
+export TZ=Asia/Jakarta
+cd cpuminer-multi
+./cpuminer -a minotaurx -o stratum+tcp://minotaurx.mine.zergpool.com:7019 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,ID=lenz -t 2
+
+=======
+termux miner scryptn2 minotaurx ghostrider
+
+git clone https://github.com/wong-fi-hung/termux-miner.git
+
+ #!/bin/sh
+clear
+export TZ=Asia/Jakarta
+cd termux-miner
+./cpuminer --algo minotaurx -o stratum+tcp://minotaurx.mine.zergpool.com:7019 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,ID=lenz -t 2
+
+ #!/bin/sh
+clear
+export TZ=Asia/Jakarta
+cd termux-miner
+./cpuminer --algo scryptn2 -o stratum+tcp://scryptn2.mine.zergpool.com:3435 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,ID=lenz -t 2
+
+#!/bin/sh
+clear
+export TZ=Asia/Jakarta
+cd termux-miner
+./cpuminer --algo gr -o stratum+tcp://ghostrider.mine.zergpool.com:5354 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,ID=lenz -t 2
+
+№###
+
+ #!/bin/sh
+clear
+export TZ=Asia/Jakarta
+cd termux-miner
+./cpuminer -a yescrypt -o stratum+tcp://yescrypt.mine.zergpool.com:6233 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,mc=BSTY/XMY,ID=lenz -t 2
+
+------
+
+ #!/bin/sh
+clear
+export TZ=Asia/Jakarta
+cd termux-miner
+./cpuminer -a yescryptR16 -o stratum+tcp://yescryptR16.mine.zergpool.com:6333 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,ID=lenz -t 2
+
+ #!/bin/sh
+clear
+export TZ=Asia/Jakarta
+cd termux-miner
+./cpuminer -a yescryptR32 -o stratum+tcp://yescryptR32.mine.zergpool.com:6343 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,ID=lenz -t 2
+
+ #!/bin/sh
+clear
+export TZ=Asia/Jakarta
+cd termux-miner
+./cpuminer -a yespower -o stratum+tcp://yespower.mine.zergpool.com:6533 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,ID=lenz -t 2
+
+ #!/bin/sh
+clear
+export TZ=Asia/Jakarta
+cd termux-miner
+./cpuminer -a power2b -o stratum+tcp://power2b.mine.zergpool.com:7445 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,ID=lenz -t 2
+
+========
+
+
+cpuminer-gr
+
+ git clone https://gitee.com/hhbzou/cpuminer-gr
+
+
+
+cpupower: --algo yespower --param-key "CPUpower: The number of CPU working or available for proof-of-work mining" -o stratum+tcp://cpupower.mine.zergpool.com:4250 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,ID=fonz -t 2
+
+power2b: --algo yespower-b2b --param-n 2048 --param-r 32 --param-key "Now I am become Death, the destroyer of worlds" -o stratum+tcp://power2b.mine.zergpool.com:7445 -u ltc1qjr9mfnmgdxrahfn3zvezsr2rdh4epsqjttpl54 --timeout 120 -p c=LTC,ID=fonz -t 2
+
+
+   1G9UXM7eEcJqTigx62QGSDGpEzfAzfhp9q
